@@ -1,0 +1,311 @@
+body{
+    background-image: url("imagens/background.jpg");
+    background-repeat: repeat;
+    background-size: auto;
+}
+
+.espaços{
+    height: 75px;
+}
+
+.caixa_logo{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto 3em auto;
+}
+
+#logo{
+    width: 60px;
+    height: 60px;
+    color: white;
+    transition: 1s;
+}
+
+#logo:hover{
+    height: 65px;
+    width: 65px;
+    cursor: pointer;
+}
+
+.death{
+    transition: 3s;
+}
+
+[data-star="ativo"]{
+    background-image: url("imagens/death.png");
+    background-repeat: no-repeat;
+    display: block;
+    width: 40vw;
+    height: 70vh;
+    position: absolute;
+    right: 0;
+}
+
+[data-logo="ativo"]{
+    display: none;
+}
+
+
+@media screen and (min-width:1024px) {
+    body{
+    background-image: url("imagens/background.jpg");
+    background-repeat: repeat;
+    background-size: auto;
+    }
+}
+
+.titulo-1 {
+    font-family: Mandalor;
+    font-size: 30px;
+    color:white;
+
+}
+.titulo-2{
+    font-family: Mandalor;
+    font-size: 45px;
+    color:white;
+}
+
+
+.caixa_titulo{
+    margin: 1em 0 1em 0;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color: black;
+    border-bottom: 1px double white;
+    margin-bottom: 2em;
+}
+
+.posicao_botao{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3em;
+}
+
+.botao{
+    color: white;
+    font-family: Star;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 1em;
+    font-size: 17px;
+}
+
+.botao:hover{
+    box-shadow: inset 0 0 10px white;
+    cursor: pointer;
+}
+
+.caixa_texto-main{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:5px;
+    margin:0 auto;
+    width: 60%;
+    transform: perspective(400px) rotateX(20deg);
+}
+
+@media screen and (min-width:1024px) {
+    .caixa_texto-main{
+    width: 30%;
+    }
+    .texto_main{
+    line-height: 2em;
+    font-size: 48px;
+    }
+    .caixa_texto-main{
+    width: 20%;
+    }
+    
+}
+
+.texto_main{
+    color:var(--amarelo);
+    font-size: 20px;
+    font-family: Star;
+    text-align: center;
+    line-height: 1.5em;
+}
+
+
+
+
+.caixa_texto-2{
+    margin:6em auto 0 auto;
+    width: 90%;
+}
+
+.titulo-longo{
+    text-align: center;
+    font-family: 'News Cycle';
+    font-size: 23px;
+    color: var(--azul);
+}
+
+@media screen and (min-width:1024px) {
+    .caixa_texto-2{
+        margin:20em auto 5em auto;
+        width: 90%;
+    }
+    .caixa_texto-3{
+        margin:10em auto 0 auto;
+        width: 90%;
+    }
+    
+    .titulo-longo{
+        text-align: center;
+        font-family: 'News Cycle';
+        font-size: 30px;
+        color: var(--azul);
+    }
+    
+}
+
+.caixa_x-wing{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.x-wing{
+    width: 60vw;
+    margin: 0 auto;
+    transition: 2s;
+}
+
+.x-wing:hover{
+    width: 80vw;
+    transform: rotate(20deg);
+    cursor: pointer;
+}
+
+.caixa_fighter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 6em auto 6em auto;
+}
+
+.fighter{
+    width: 45vw;
+    margin: 0 auto;
+    transition: 3s;
+}
+
+.fighter:hover{
+    width: 55vw;
+    transform: rotate(170deg);
+    cursor: pointer;
+}
+.caixa_millennium{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 6em auto 6em auto;
+}
+
+.millennium{
+    width: 40vw;
+    margin: 10em auto 20em auto;
+    transition: 2s;
+    transform: rotate(20deg);
+}
+.millennium:hover{
+    width: 45vw;
+    transform: rotate(-30deg);
+    cursor: pointer;
+}
+
+@media screen and (min-width:1024px) {
+    .x-wing{    
+    width: 20vw;
+    }
+    .x-wing:hover{
+    width: 35vw;
+    }
+    .caixa_fighter{
+    margin-top: 5em;
+    }
+    .fighter{
+    width: 15vw;
+    }
+    .fighter:hover{
+    width: 20vw;
+    }
+    .millennium{
+    width: 20vw;
+    }
+    .millennium:hover{
+    width: 25vw;
+    }
+    
+}
+
+.tatooine{
+    z-index: 10;
+    background-image: var(--tatooine);
+    height: 100vh;
+}
+
+@media screen and (min-width:1024px) {
+    .texto_main{
+    font-size: 25px;
+    }
+}
+
+footer{
+    background-color: rgba(251, 99, 17);
+}
+
+.texto_tatooine{
+    font-size: 23px;
+    font-family: Mandalor;
+    color: black;
+    text-align: center;
+    padding: 2em;
+}
+
+.links{
+    font-size: 23px;
+    font-family: Mandalor;
+    color: black;
+    align-items: center;
+    text-decoration: none;
+}
+
+.links:hover{
+    font-size: 25px;
+    font-family: Mandalor;
+    color: black;
+}
+
+.caixa_footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.texto_final{
+    font-size: 16px;
+    font-family: Mandalor;
+    color: black;
+    align-items: center;
+    margin-top: 2em;
+}
+
+@media screen and (min-width:1024px) {
+    .texto_tatooine{
+    font-size: 30px;
+    }
+}

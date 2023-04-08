@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=News+Cycle&display=swap" rel="stylesheet">
+    <link rel=stylesheet href="styles.css">
+    <link rel="stylesheet" href="reset.css">
+    <title>Home  |  Gabriel Lima</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="caixa_titulo">
+                <h1 class="titulo-1">Gabriel</h1><h1 class="titulo-2">Lima</h1>
+            </div>
+        </div>
+    </header>
+    <nav class="caixa_logo">
+        <div class="espaços"></div>
+        <div class="espaços"></div>
+        <img id="logo" src="imagens/imperio.png" alt="logo do império">
+        <audio src="Soms/death.mp3" id="som_death"></audio>
+        <audio src="Soms/Star Wars- The Imperial March (Darth Vader's Theme).ogg" id="som_march"></audio>
+        <audio src="Soms/father.mp3" id="som_father"></audio>
+    </nav>
+    <span class="death" data-star></span>
+    <main>
+        <section>
+            <div class="posicao_botao">
+                <buttom class="botao"> Dê play no tema</buttom>
+            </div>
+            <audio src="Soms/Theme.mp3" id="musica" data-play></audio>
+            <div class="caixa_texto-main">
+                <p class="texto_main">De uma galáxia muito,muito,muito distante, existe um estudante de HTML, CSS e Javascript.</p>
+                <p class="texto_main">Fazer páginas na web é como um hobbie, com aptidão e atenção aos detalhes ele se diverte com suas criações.</p>
+                <p class="texto_main">Seu nome é Gabriel Lima.</p>
+            </div>
+            <div class="caixa_texto-2">
+                <h2 class="titulo-longo">Há muito tempo, em uma galáxia muito, muito distante...</h2>
+            </div>
+            <div class="caixa_x-wing">
+            <img src="imagens/x-wing.png" alt="X-Wings" class="x-wing" data-xwing>
+            <audio src="Soms/fighters-coming.mp3" id="som_xwing" data-xwing></audio>
+            <audio src="Soms/enemy-fighters.mp3" id="som_xwing2" data-xwing></audio>
+            <audio src="Soms/flying-4.mp3" id="som_xwing3" data-xwing></audio>
+            <audio src="Soms/blast-3.mp3" id="som_xwing4" data-xwing></audio>
+            </div>
+            <div class="caixa_fighter">
+                <img src="imagens/fighter.png" alt="Fighter" class="fighter" data-fighter>
+                <audio src="Soms/flyie-tie.mp3" id="som_fighter" data-fighter></audio>
+                <audio src="Soms/blast-tie.mp3" id="som_fighter2" data-fighter></audio>
+            </div>
+            <div class="caixa_texto-3" >
+                <h2 class="titulo-longo">Escute os soms da batalha das naves clicando nas figuras acima.</h2>
+            </div>
+            <div class="caixa_millennium">
+                <img src="imagens/millennium.png" alt="Millennium Falcon" class="millennium" data-millennium>
+                <audio src="Soms/han-solo.mp3" id="som_millennium" data-millennium></audio>
+                <audio src="Soms/chewbacca.mp3" id="som_millennium2" data-millennium></audio>
+                <audio src="Soms/hyperdrive.mp3" id="som_millennium3" data-millennium></audio>
+            </div>
+        </section>
+        <section class="tatooine">
+        </section>
+        <footer>
+            <div class="caixa_footer">
+                <p class="texto_tatooine">Aguarde novos projetos.</p>
+                <a class= "links" href="https://www.linkedin.com/in/gabriel-duarte-05b523146/">Linkedin</a>
+                <a class="links" href="https://www.instagram.com/sir._duarte/">Instagram</a>
+                <p class="texto_final">Página criada por Gabriel Lima</p>
+            </div>
+        </footer>
+    </main>
+    <script src="js/som_tema.js"></script>
+    <script src="js/sons_figuras.js"></script>
+</body>
+</html>

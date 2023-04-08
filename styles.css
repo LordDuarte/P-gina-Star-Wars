@@ -1,0 +1,22 @@
+@import url(index.css);
+
+@font-face {
+    font-family: Mandalor;
+    src: url("texto.ttf/MandaloreTitle-lggAe.otf");
+}
+
+@font-face {
+    font-family: Deathstar;
+    src: url("texto.ttf/DeathStar-VmWB.ttf");
+}
+
+@font-face {
+    font-family: Star;
+    src: url("texto.ttf/SfDistantGalaxy-0l3d.ttf");
+}
+
+:root{
+    --amarelo: #FFE81F;
+    --azul: #00BFFF;
+    --tatooine: linear-gradient(180deg, rgba(152, 46, 105,.1)  0%, rgba(182, 44, 105,.4) 30%, rgba(229, 40, 88,.6) 50%, rgba(249, 64, 59) 70%, rgba(251, 99, 17) 100%);
+}
